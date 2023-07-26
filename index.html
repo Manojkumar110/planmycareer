@@ -162,8 +162,6 @@
             </div>
         </div>
     </div>
-
-
     <section class="category section">
         <div class="container">
             <div class="row mt-5 ">
@@ -390,8 +388,80 @@
     </div>
     <hr>
     <!-- OwlCarousel start here  -->
-    
-   
+    <div class="container">
+        <div class="row section-header pt-5">
+            <h2 class="section-title">Quotes</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-7">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="author">
+                                <div class="img-thumb"> 
+                                    <img src="image/img1.png" alt="pic">
+                                </div>
+                            </div>
+                            <div class="content-inner">
+                                <p class="description">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                                    stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                    icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non erat
+                                    pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                <div class="author-info">
+                                    <h2><a href="">Jessica</a></h2>
+                                    <span>Senior Accountant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="author">
+                                <div class="img-thumb">
+                                    <img src="image/img2.png" alt="pic">
+                                </div>
+                            </div>
+                            <div class="content-inner">
+                                <p class="description">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                                    stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                    icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non erat
+                                    pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                <div class="author-info">
+                                    <h2><a href="#">John Doe</a></h2>
+                                    <span>Project Menager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="author">
+                                <div class="img-thumb">
+                                    <img src="image/img3.png" alt="pic">
+                                </div>
+                            </div>
+                            <div class="content-inner">
+                                <p class="description">Morbi quam enim, cursus non erat pretium veh icula finibus ex
+                                    stibulum venenatis viverra dui Morbi quam enim, cursus non erat pretium veh
+                                    icula finibus ex stibulum venenatis viverra dui Morbi quam enim, cursus non erat
+                                    pretium veh icula finibus ex stibulum venenatis viverra dui.</p>
+                                <div class="author-info">
+                                    <h2><a href="#">Helen</a></h2>
+                                    <span>Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- OwlCarousel end here  -->
     <!-- download section start here-->
     <section id="download" class="section bg-gray">
@@ -459,7 +529,7 @@
                         <div class="widget">
                             <h3 class="block-title">Subscribe Now</h3>
                             <p>subscibe plan my career for all new updates</p>
-                            <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
+                            <form method="" id="subscribe-form" name="subscribe-form" class="">
                                 <div class="form-group is-empty">
                                     <input type="email" value="" name="Email" class="form-control" id="EMAIL"
                                         placeholder="Enter Email..." required="">
@@ -495,11 +565,30 @@
         </div>
     </footer>
     <!-- footer end here -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
-
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
