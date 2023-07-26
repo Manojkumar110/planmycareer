@@ -164,12 +164,12 @@
     </div>
     <section class="category section">
         <div class="container">
-            <div class="row mt-5 ">
+            <div class="row mt-5">
                 <div class="section-header col-sm-12 d-flex justify-content-center">
                     <h2 class="section-title">Browse Categories</h2>
                 </div>
-                <div class="col-sm-12 d-flex justify-content-center">
-                    <p>Choose Options from our Services</p>
+                <div class="col-sm-12 d-flex justify-content-center" style="margin-top: -70px;">
+                    <p class="">Choose Options from our Services</p>
                 </div>
             </div>
             <div class="row pb-5">
@@ -393,7 +393,7 @@
             <h2 class="section-title">Quotes</h2>
         </div>
     </div>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row d-flex justify-content-center">
             <div class="col-sm-7">
                 <div class="owl-carousel owl-theme">
@@ -573,6 +573,7 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
+            autoplay: true,
             nav: false,
             responsive: {
                 0: {
@@ -585,7 +586,7 @@
                     items: 1
                 }
             }
-        })
+        }, 1000)
     </script>
 </body>
 
