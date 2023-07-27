@@ -1,10 +1,15 @@
 @import "https://fonts.googleapis.com/css?family=Rubik:400,500,700";
 
-body {
+* {
     font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-x: hidden
 }
 
 ::-webkit-scrollbar {
@@ -149,7 +154,7 @@ h5 {
 }
 
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
 
     .navbar-brand {
         display: none;
@@ -186,7 +191,12 @@ h5 {
     .dropdown-menu {
         background-color: black;
     }
+
+
 }
+
+
+
 
 .search-btn {
     position: relative;
@@ -357,7 +367,7 @@ h5 {
 
 .btn-common {
     background: #26ae61;
-    position: relative;
+    /* position: relative; */
     font-size: 14px;
     padding: 10px 30px;
     border-radius: 30px;
@@ -367,8 +377,13 @@ h5 {
     border: none;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
-    display: inline-block;
-    left: 13em;
+    /* display: inline-block; */
+    /* left: 13em; */
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 #browse-jobs.section {
@@ -645,17 +660,9 @@ footer .menu li a {
 
 
 #subscribe-form .form-group .btn-common {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 7px 15px;
     height: 39px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background: 0 0;
-    background: #26ae61;
 }
 
 #subscribe-form .sub-btn {
@@ -663,6 +670,7 @@ footer .menu li a {
     top: 0;
     right: 0;
     border-radius: none;
+    width: 20px;
 }
 
 #copyright {
@@ -699,4 +707,22 @@ footer .menu li a {
     top: 10px;
     left: 11.5px;
     font-size: 15px;
+}
+
+
+.btn-common-play {
+    background: #26ae61;
+    position: relative;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    left: 19em;
+
 }
