@@ -199,23 +199,42 @@ h5 {
 
 
 .search-btn {
-    position: relative;
+    position: absolute;
     width: 50px;
     border-radius: 18px 18px 18px 18px;
     background-color: #008000;
-}
-
-
-.search-btn .button {
-    position: absolute;
-    top: 8px;
-    left: 18px;
-
+    height: 40px;
+    right: 40px;
+    top: 0px;
 }
 
 .search-btn .button i {
+    position: absolute;
     color: #fff;
+    top: 7px;
+    left: 16px;
 }
+
+
+@media screen and (max-width: 775px) {
+
+
+    .search-btn {
+        width: 97%;
+        border-radius: 18px 18px 18px 18px;
+        background-color: #008000;
+        height: 40px;
+        right: 10px;
+        top: 47px;
+    }
+}
+
+@media only screen and (max-width: 767px){ 
+    .job-search-form .button {
+        width: 100%;
+}
+}
+
 
 .navbar-toggler-icon {
     display: inline-block;
@@ -726,3 +745,11 @@ footer .menu li a {
     left: 19em;
 
 }
+
+/* bi-search::before {
+    content: "";
+    position: absolute !important;
+    top: 16px !important;
+    margin: 0 auto !important;
+    left: 40% !important;
+} */
