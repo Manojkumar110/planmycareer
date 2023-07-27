@@ -215,36 +215,55 @@ h5 {
     left: 16px;
 }
 
+@media screen and (max-width: 1054px) {
+    body{
+        width: 112%;
+    }  
+}
 
 @media screen and (max-width: 775px) {
-
-
+    body{
+        width: 126%;
+    }
     .search-btn {
-        width: 97%;
+        width: 82%;
         border-radius: 18px 18px 18px 18px;
         background-color: #008000;
         height: 40px;
-        right: 10px;
+        right: 125px;
         top: 47px;
     }
 }
 
 @media only screen and (max-width: 767px){ 
     .job-search-form .button {
-        width: 100%;
+        width: 98%;
+        /* overflow: hidden; */
 }
 }
 
+@media screen and (max-width: 400px) {
+    body{
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    body{
+        width: 152%;
+    }
+}
 
 .navbar-toggler-icon {
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
-    background-image: var(--bs-navbar-toggler-icon-bg);
+    /* background-image: var(--bs-navbar-toggler-icon-bg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    color: white !important;
 }
 
 
@@ -551,10 +570,12 @@ p {
     font-weight: 500;
     margin-bottom: 30px;
     padding: 120px 0px 0px 0px;
+    text-align: center;
 }
 
 #download .download-wrapper p {
     margin-bottom: 35px;
+    text-align: center;
 }
 
 #download .download-wrapper {
