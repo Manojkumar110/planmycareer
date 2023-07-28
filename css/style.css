@@ -227,22 +227,63 @@ h5 {
     }
 
     .search-btn {
-        width: 95%;
+        width: 97%;
         border-radius: 18px 18px 18px 18px;
         background-color: #008000;
         height: 40px;
-        right: 3%;
+        right: 1%;
         top: 47px;
     }
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen {
+    
+}
+
+@media only screen and (max-width: 768px) {
     .job-search-form .button {
         width: 98%;
         /* overflow: hidden; */
     }
+
+
+
+
+    .search-btn {
+        width: 80%;
+        border-radius: 18px 18px 18px 18px;
+        background-color: #008000;
+        height: 40px;
+        right: 18%;
+        top: 47px;
+    }
+
+    /* .search-btn { */
+        /* width: 81%; */
+        /* border-radius: 18px 18px 18px 18px; */
+        /* background-color: #008000; */
+        /* height: 40px; */
+        /* right: 18%; */
+        /* top: 47px; */
+    /* } */
+
 }
+
+
+@media screen and (max-width: 425px) {
+    .search-btn {
+        width: 97%;
+        border-radius: 18px 18px 18px 18px;
+        background-color: #008000;
+        height: 40px;
+        right: 2%;
+        top: 47px;
+    }
+}
+
+
+
 
 @media screen and (max-width: 400px) {
     body {
@@ -253,6 +294,14 @@ h5 {
 @media screen and (max-width: 376px) {
     body {
         width: 152%;
+    }
+    .search-btn {
+        width: 96%;
+        border-radius: 18px 18px 18px 18px;
+        background-color: #008000;
+        height: 40px;
+        right: 2%;
+        top: 47px;
     }
 }
 
