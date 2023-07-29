@@ -12,8 +12,48 @@
     opacity: 0.5 !important;
 }
 
+.navbar {
+    /* height: 80px;     */
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
 
-/* old navbar redesign start here  */
+.navbar-nav{
+    margin: 0 auto;
+    margin-right: 2% !important;
+}
+
+
+.navbar-brand img{
+    width: 50px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+
+
+    color: #fff;
+    /* padding: 0 17px; */
+    /* letter-spacing: .5px; */
+    border-radius: 4px;
+    /* line-height: 37px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* background: 0 0; */
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+}
+.login-btn{
+    height: 30px !important;
+}
+
+button .login-text{
+    color: #fff;
+    margin-top: -6px;
+}
+/* old   redesign start here  */
 /* .navbar-brand:hover {
     color: #26ae61;
 } */
@@ -42,29 +82,26 @@
     width: 50px;
 } */
 
-/* .brand {
-    color: #26ae61;
-    font-size: 14px;
-    text-transform: uppercase
+/* 
 } */
 
-/* .nav-item:hover ul {
+.nav-item:hover ul {
     display: inline-block;
     font-family: 'Rubik', sans-serif;
     border: none;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
-} */
+} 
 
-/* .dropdown-toggle::after {
+.dropdown-toggle::after {
     display: inline-block;
     transform: rotate(270deg);
     position: absolute;
     content: "<";
     border: none !important;
-} */
+} 
 
-/* .nav-item ul::before {
+.nav-item ul::before {
     position: absolute;
     top: -6px;
     left: 22px;
@@ -73,20 +110,28 @@
     border-width: 0 9px 8px;
     border-color: transparent transparent #fff;
     box-sizing: border-box;
-} */
+} 
+
+
+
+@media screen and (max-width: 991px) {
+    .nav-item ul::before{
+        display: none;
+    }
+  }
 
 
 /* .nav-link {
     font-size: 14px;
 } */
 
-/* .nav-item:hover .nav-link {
+.nav-item:hover .nav-link {
     color: #008000 !important;
-} */
+}
 
-/* .dropdown-menu {
+.dropdown-menu {
     padding: 10px;
-} */
+} 
 
 
 
@@ -96,11 +141,11 @@
     margin: 3px 0px;
 } */
 
-/* .dropdown-item:hover {
+.dropdown-item:hover {
     background-color: #008000;
     border-radius: 3px 3px 3px 3px;
     color: white;
-} */
+}
 
 
 /* .nav-item button {
@@ -161,28 +206,6 @@
 /* new design start here */
 
 
-@media only screen and (max-width: 767px) {
-
-    .job-search-form .button {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-
-
-@media only screen and (max-width: 767px) {
-    #download .download-wrapper .app-button .btn {
-        margin-bottom: 20px;
-        margin-left: 88px;
-
-
-        /* margin-bottom: 20px;
-        margin-left: 10%;
-        margin-right: 10%; */
-    }
-
-}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -212,7 +235,17 @@ h5 {
     color: #191c1e;
 }
 
-hero-area {
+.navbar-brand-name {
+    color: #26ae61;
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+.navbar-toggler {
+    background-color: #008000;
+}
+
+.hero-area {
     background: #fff;
     color: #fff;
     overflow: hidden;
@@ -223,6 +256,12 @@ hero-area {
 .hero-area .contents {
     padding: 150px 0 80px;
 }
+
+@media screen and (max-width: 991px) {
+    .navbar-brand-name{
+        display: none;
+    }
+  }
 
 .hero-area .contents h2 {
     color: #333;
@@ -246,8 +285,10 @@ hero-area {
     margin-bottom: 0;
 }
 
-.form-control,
-.search-college {
+
+
+
+.form-control{
     width: 100%;
     padding: 9px 15px;
     font-size: 14px;
@@ -552,10 +593,6 @@ a:hover {
     background: #f9fcff;
 }
 
-/* .bg-gray .container {
-    padding: 60px 0px;
-} */
-
 #download .download-wrapper {
     width: 100%;
     display: table;
@@ -604,6 +641,26 @@ a:hover {
     font-size: 13px;
     font-weight: 400;
 }
+
+
+@media only screen and (max-width: 767px) {
+
+    .job-search-form .button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    #download .download-wrapper .app-button .btn {
+        margin-bottom: 20px;
+        margin-left: 88px;
+    }
+
+}
+
 .btn-border {
     border-style: solid;
     border-width: 2px;
@@ -619,10 +676,6 @@ a:hover {
     color: #26ae61;
     box-shadow: 0 7px 9px rgba(96, 94, 94, .17);
 }
-
-
-
-
 
 footer .footer-Content {
     background-color: #24324a;
