@@ -6,10 +6,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.footer-social img{
+
+.footer-social img {
     width: 28px;
     height: 28px;
 }
+
 ::placeholder {
     color: #fff !important;
     opacity: 0.5 !important;
@@ -29,17 +31,24 @@
         max-height: 350px;
         padding: 20px 10px;
     }
-  }
+}
+
+@media screen and (max-width: 950px) {
+    .hero-area .contents {
+        padding: 0px !important;
+    }
+}
 
 
 
-.navbar-nav{
+
+.navbar-nav {
     margin: 0 auto;
     margin-right: 2% !important;
 }
 
 
-.navbar-brand img{
+.navbar-brand img {
     width: 50px;
 }
 
@@ -52,11 +61,11 @@
     transition: all .3s ease-in-out;
 }
 
-.login-btn{
+.login-btn {
     height: 30px !important;
 }
 
-button .login-text{
+button .login-text {
     color: #fff;
     margin-top: -6px;
 }
@@ -83,7 +92,7 @@ button .login-text{
     border: none;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
-} 
+}
 
 .dropdown-toggle::after {
     display: inline-block;
@@ -91,7 +100,7 @@ button .login-text{
     position: absolute;
     content: "<";
     border: none !important;
-} 
+}
 
 .nav-item ul::before {
     position: absolute;
@@ -102,13 +111,13 @@ button .login-text{
     border-width: 0 9px 8px;
     border-color: transparent transparent #fff;
     box-sizing: border-box;
-} 
+}
 
 @media screen and (max-width: 991px) {
-    .nav-item ul::before{
+    .nav-item ul::before {
         display: none;
     }
-  }
+}
 
 .nav-item:hover .nav-link {
     color: #008000 !important;
@@ -116,12 +125,12 @@ button .login-text{
 
 .dropdown-menu {
     padding: 10px;
-} 
+}
 
 .dropdown-item:hover {
     background-color: #008000;
     border-radius: 3px 3px 3px 3px;
-    color: white ;
+    color: white;
 }
 
 ::-webkit-scrollbar {
@@ -175,10 +184,10 @@ h5 {
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-brand-name{
+    .navbar-brand-name {
         display: none;
     }
-  }
+}
 
 .hero-area .contents h2 {
     color: #333;
@@ -202,7 +211,7 @@ h5 {
     margin-bottom: 0;
 }
 
-.form-control{
+.form-control {
     width: 100%;
     padding: 9px 15px;
     font-size: 14px;
@@ -211,7 +220,7 @@ h5 {
     transition: all .3s;
 }
 
-.secrch-placeholder::placeholder{
+.secrch-placeholder::placeholder {
     color: black !important;
     font-size: 14px;
 }
